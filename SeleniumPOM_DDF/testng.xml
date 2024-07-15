@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/Users/ange2612/Documents/SeleniumPOM_DDF">
+        <classes>
+            <class name="tests.CareersPageTest">
+            <methods>
+                <include name="scrollToCurrentOpenings"/>
+                <include name="verifyTitleOfOpenedPositions"/>
+                <include name="verifyNumberOfOpenPositions"/>
+                <include name="getJobTitleAndSaveTitleOfOpenedPositions"/>
+            </methods>
+        </class>
+            <class name="tests.CompanyPageTest">
+            <methods><include name="verifyCompanyPageTitle"/>
+                <include name="verifyCompanyPageUrl"/>
+                <include name="verifyTextForHQ"/>
+            </methods>
+        </class>
+            <class name="tests.HomePageTest">
+                <methods>
+                    <include name="hoverOnAboutUs"/>
+                    <include name="navigateToCareersPage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
